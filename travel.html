@@ -1,0 +1,331 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <script src="https://kit.fontawesome.com/c105262127.js" crossorigin="anonymous"></script>
+    <title>Travel</title>
+</head>
+<style>
+    * {
+        box-sizing: border-box;
+    }
+
+    body {
+        margin: 0;
+        padding: 0;
+        overflow: auto;
+    }
+
+    .bgimage {
+        background-image: url(https://upload.wikimedia.org/wikipedia/commons/d/da/Taj-Mahal.jpg);
+        background-size: cover;
+        /* background-position: center; */
+        background-repeat: no-repeat, no-repeat;
+        background-attachment: fixed;
+    }
+
+    .navbar {
+        /* backdrop-filter: blur(15px); */
+        box-shadow: 0px 5px 50px 10px;
+        position: absolute;
+        width: 100%;
+        top: 0px;
+        background-color: transparent;
+    }
+
+    .navbar-nav,
+    .mr-auto {
+        flex: 1;
+        margin: auto !important;
+        display: flex;
+        justify-content: center;
+    }
+
+    .navbar-expand-lg .navbar-nav .nav-link {
+        padding-right: 6.5rem;
+        font-weight: bold;
+    }
+
+    .navbar-brand {
+        font-size: 2rem;
+        font-family: Georgia, 'Times New Roman', Times, serif;
+    }
+
+    .btn-info {
+        color: white;
+        background-color: transparent;
+        backdrop-filter: brightness(0.15);
+        border-color: #000;
+        font-family: Poppins;
+        /* font-weight: bold; */
+    }
+
+    .card .card-title {
+        font-family: Poppins;
+    }
+
+    .strip-content {
+        width: 390px;
+        padding: 15px;
+        font-family: Poppins;
+        font-weight: lighter;
+        color: white;
+    }
+    .end-strip-content {
+        width: 390px;
+        padding: 15px;
+        font-family: Poppins;
+        font-weight: lighter;
+        color: white;
+        margin-top: 15px;
+    }
+
+    .f-content {
+        width: 390px;
+        padding: 15px;
+        font-family: 'Times New Roman', Times, serif;
+        font-weight: lighter;
+        color: rgb(160, 160, 159);
+        font-size: 15px;
+        text-align: center;
+    }
+
+    /* .b{
+        border-right: 2px solid wheat;
+    } */
+    .b {
+        margin: 5vh 0;
+        height: 16.5vh;
+        width: 1px;
+        border-right: 1px solid wheat;
+    }
+    .a {
+        margin: 5vh 0;
+        height: 10vh;
+        width: 1px;
+        border-right: 1px solid wheat;
+    }
+    .f-content>span>p span{
+        line-height: normal;
+        letter-spacing: normal;
+    }
+    @media(max-width:600px) {
+        .strip {
+            display: flex;
+            flex-wrap: wrap;
+        }
+        .end-strip {
+            display: flex;
+            flex-wrap: wrap;
+        }
+
+        .cards {
+            display: flex;
+            flex-wrap: wrap;
+        }
+
+        .hero {
+            display: flex;
+            flex-wrap: wrap;
+        }
+        /* .end {
+            display: flex;
+            flex-wrap: wrap;
+        } */
+    }
+</style>
+
+<body>
+    <div class="container-fluid px-0">
+
+
+        <nav class="navbar navbar-expand-lg navbar-dark bg-faded">
+            <div class="container-fluid">
+                <span class="navbar-brand mb-0 h1" href="#">
+                    <img src="Phoenix.png" alt="" width="40" height="40" class="d-inline-block align-text-top"
+                        style="position: relative;top: -5px;">
+
+                    PHOENIX</span>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+                    aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                    <ul class="navbar-nav mr-auto mb-2 mb-lg-0">
+                        <li class="nav-item">
+                            <a class="nav-link" aria-current="page" href="#">Home</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#about">About</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#contacts">Contacts</a>
+                        </li>
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button"
+                                data-bs-toggle="dropdown" aria-expanded="false">
+                                Enquiries
+                            </a>
+                            <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                                <li><a class="dropdown-item" href="#">Book Tickets</a></li>
+                                <li><a class="dropdown-item" href="#">Book Hotels</a></li>
+                                <li><a class="dropdown-item" href="#">Full Package</a></li>
+                            </ul>
+                        </li>
+                        
+                    </ul>
+                    <form class="d-flex" role="search">
+                        <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+                        <button class="btn btn-secondary" type="submit">Search</button>
+                    </form>
+                </div>
+            </div>
+        </nav>
+        <div class="bgimage" style="margin-top: 0px;">
+            <section class="hero">
+                <div class="container">
+                    <h1 class="display-1"
+                        style="text-align: center; padding: 200px 100px 20px 100px;color: white;font-family: Georgia, 'Times New Roman', Times, serif;text-shadow: 0 0 3px #000, 0 0 5px #000;">
+                        SPREAD YOUR WINGS</h1>
+                    <div class="row" style="display: flex; justify-content: center; margin: 0 100px;">
+                        <div class="column-sm-6">
+                            <p class="lead"
+                                style="color: white ;padding:5px 22px; font-weight: 300; background: transparent;backdrop-filter: brightness(0.6);">
+                                To find the solace and tranquility you want.
+                                To escape from your tiring reality in search of your dream.
+                                To embrace the beauty of nature.
+                                To feel free like a bird.
+                                Just follow our lead...
+                            </p>
+                            <div style="width: 100%;display: flex;justify-content: center;">
+                                <button type="button" class="btn btn-info">LET'S GO !</button>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+            </section>
+            <section class="cards" style="display: flex; justify-content: space-around;padding: 25px 0 25px 0;">
+                <div class="card" style="width: 18rem;display: inline-block;">
+                    <img src="https://media.istockphoto.com/photos/landscape-of-snow-mountains-and-mountain-road-to-nubra-valley-in-leh-picture-id1061972184?b=1&k=20&m=1061972184&s=170667a&w=0&h=5uMJ0xdCTuYrLix-B6O7J183kG7lM4f8_DwjmBskbHQ="
+                        class="card-img-top" alt="...">
+                    <div class="card-body">
+                        <h5 class="card-title">LEH-LADAKH</h5>
+                        <p class="card-text">Some quick example text to build on the card title and make up the bulk of
+                            the card's content.</p>
+                        <a href="#" class="btn btn-outline-dark stretched-link">Book Here</a>
+                    </div>
+                </div>
+                <div class="card" style="width: 18rem;display: inline-block;">
+                    <img src="https://media.istockphoto.com/photos/houseboat-in-alappuzha-backwaters-kerala-picture-id1266651692?b=1&k=20&m=1266651692&s=170667a&w=0&h=GYvQdUcdoq4wvqoTsO7n8wvVwcj-i92HLybSck_52VU="
+                        class="card-img-top" alt="...">
+                    <div class="card-body">
+                        <h5 class="card-title">KERALA</h5>
+                        <p class="card-text">Some quick example text to build on the card title and make up the bulk of
+                            the card's content.</p>
+                        <a href="#" class="btn btn-outline-dark stretched-link">Book Here</a>
+                    </div>
+                </div>
+                <div class="card" style="width: 18rem;display: inline-block;">
+                    <img src="https://media.istockphoto.com/photos/indian-cameleers-camel-driver-with-camel-silhouettes-in-dunes-on-picture-id1224021113?b=1&k=20&m=1224021113&s=170667a&w=0&h=qbeNLHd3HGCgm1QqiySqB7p-e4oGK9TEZLxOfZrxjsw="
+                        class="card-img-top" alt="...">
+                    <div class="card-body">
+                        <h5 class="card-title">RAJASTHAN</h5>
+                        <p class="card-text">Some quick example text to build on the card title and make up the bulk of
+                            the card's content.</p>
+                        <a href="#" class="btn btn-outline-dark stretched-link">Book Here</a>
+                    </div>
+                </div>
+                <div class="card" style="width: 18rem;display: inline-block;">
+                    <img src="https://www.horhotravel.com/wp-content/uploads/2020/05/sonamarg-tourist-places.jpg"
+                        class="card-img-top" alt="...">
+                    <div class="card-body">
+                        <h5 class="card-title">KASHMIR</h5>
+                        <p class="card-text">Some quick example text to build on the card title and make up the bulk of
+                            the card's content.</p>
+                        <a href="#" class="btn btn-outline-dark stretched-link">Book Here</a>
+                    </div>
+                </div>
+            </section>
+        </div>
+        <div class="content" style="height: 200vh; background: rgb(238, 240, 228);position: relative;padding: 0;">
+            <section class="strip"
+                style="width: 100%; display: flex;justify-content: center;text-align: center; background:rgb(206,32,38);position: absolute;">
+                <div class="strip-content">
+                    <h4>DOMESTIC & INTERNATIONAL TOURS</h4>
+                    <span>We Specialize in Customised & Group Tours within India and various International
+                        Destinations.</span>
+                </div>
+                <div class="strip-content b"></div>
+                <div class="strip-content">
+                    <h4>FLIGHTS & VISAS</h4>
+                    <span>Domestic & International Flight Bookings at very Good rates & benefit from our expertise in
+                        Visa services.</span>
+                </div>
+                <div class="strip-content b"></div>
+                <div class="strip-content">
+                    <h4>HOTEL & VEHICLE BOOKINGS</h4>
+                    <span>Corporate & Individual Hotel Bookings throughout India & Abroad. Benefit from our Special
+                        Prepurchase & Contracted Hotel Deals</span>
+                </div>
+            </section>
+            <section class="end-strip" id="contacts"
+                style="width: 100%; display: flex;justify-content: center;text-align: center; background:rgb(206,32,38);position: absolute;bottom: 197px;">
+                <div class="end-strip-content">
+                    <h4><i class="fa-solid fa-phone"></i>&nbsp; CALL US</h4>
+                    <span>+91-7439454022 / +91-9674324480</span>
+                </div>
+                <div class="end-strip-content a"></div>
+                <div class="end-strip-content">
+                    <h4><i class="fa-solid fa-envelope"></i>&nbsp; EMAIL US</h4>
+                    <span><a href="#" style="text-decoration: none;color: white;">snehil.debasish@gmail.com</a></span>
+                </div>
+                <div class="end-strip-content a"></div>
+                <div class="end-strip-content">
+                    <h4><i class="fa-solid fa-clock"></i>&nbsp; OPENING HOURS</h4>
+                    <span>Mon - Sat: 9am - 8pm
+
+                    </span>
+                </div>
+            </section>
+            <footer class="end" id="about"
+                style="width: 100%;display: flex;justify-content: space-around; background: rgb(36, 35, 35);position: absolute;bottom: 0px;">
+                <div class="f-content">
+                    <h5>OVER 5 YEARS EXPERIENCE</h5>
+                    <span>We have more than 5 years experience in this field and have a dedicated team to assist you
+                        with all your travel needs.</span>
+                </div>
+
+                <div class="f-content">
+                    <h5>OUR SERVICES</h5>
+                    <span>
+
+                        <p style="margin:0;padding: 0;"><span>- Domestic Tours</span></p>
+                        <p style="margin:0;padding: 0;"><span>- International Tours</span></p>
+                        <p style="margin:0;padding: 0;"><span>- Hotel Bookings</span></p>
+                        <p style="margin:0;padding: 0;"><span>- Visa Processing</span></p>
+                        <p style="margin:0;padding: 0;"><span>- Flight Tickets</span></p>
+                        <p style="margin:0;padding: 0;"><span>- Vehicle Bookings</span></p>
+
+                    </span>
+                </div>
+
+                <div class="f-content">
+                    <h5>VISIT US</h5>
+                    <span>A-316, Sakar 7, Next to Vo2 Gym, Nehru Bridge Corner, Ashram Road, Ahmedabad 380009 Gujarat,
+                        India</span>
+                </div>
+            </footer>
+        </div>
+    </div>
+    <script src="js/jquery.min.js"></script>
+    <script src="js/poppers.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+</body>
+
+</html>
